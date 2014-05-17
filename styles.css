@@ -1,0 +1,66 @@
+﻿body, .piece, #turnArrow, #eff_explosion {
+	background-repeat: no-repeat;
+}
+body {
+	background: url( background.png );
+	background-position: 45%;
+	background-size: 120%;
+}
+td, .piece, #eff_explosion {
+	width: 100px;
+	height: 100px;
+}
+.s_dark {
+	background-color: brown;
+}
+.s_dark:hover {
+	background-color: green;
+}
+td:not(.s_dark) {
+	background-color: grey;
+}
+#chosen {
+	height: 98%;
+	position: relative;
+	bottom: 80px;
+	right: 20px;
+}
+.piece {
+	background-size: 55%;
+	background-position: 0 20%;
+}
+.p_dark {
+	-webkit-transform: scale(-1, 1);
+	background-image: url( scorpion.gif );
+}
+.p_light {
+	background-image: url( sub-zero.gif );
+}
+.p_light.dame {
+	background-image: url( shaokahn.gif );
+}
+.p_dark.dame {
+	background-image: url( motaro.gif );
+	background-size: 100%;
+}
+
+#turnArrow {
+	width: 200px;
+	height: 300px;
+
+	position: absolute;
+	top: 40%;
+	right: 0;
+
+	background-image: url( turn_arrow.png );
+	background-position: -50px;
+	background-size: 300px 300px;
+
+}
+#turnArrow:hover {
+	background-image: url( turn_arrow_hover.png );
+}
+#eff_explosion {
+	background-image: url( explosion.gif );
+	background-size: 90px;
+}
